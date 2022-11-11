@@ -26,6 +26,14 @@
 .child-aboutus-title span {
   color: #52a7e0;
 }
+.footer-contain {
+  color: white;
+  margin-top: -30rem;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-40deg, #52a7e0 60%, white 50%);
+}
 @media (min-width: 1000px) {
   .contain-aboutUs {
     padding-top: 100px;

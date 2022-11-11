@@ -26,7 +26,8 @@
 .child-aboutus-title span {
   color: #52a7e0;
 }
-.footer-contain {
+.footer-contain,
+.contain-footer {
   color: white;
   margin-top: -30rem;
   z-index: -100;

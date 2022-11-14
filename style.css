@@ -153,6 +153,10 @@ h2 {
     transform: scale(1);
   }
 }
+.container-aboutus p {
+  text-align: justify;
+}
+
 .container-office-us {
   width: 100%;
   display: flex;
@@ -231,6 +235,7 @@ h2 {
 .text-desing p {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .btn-view-more,
@@ -247,9 +252,11 @@ h2 {
 .description-about h1 {
   text-align: center;
 }
-.text-desing p,
-h1 {
+.text-desing h1 {
   text-align: center;
+}
+.text-desing p {
+  text-align: left;
 }
 .container-card {
   display: grid;
@@ -408,8 +415,8 @@ h1 {
   padding: 2rem 0;
 }
 .card-posibility img {
-  width: 300px;
-  height: 250px;
+  /* width: 300px;
+  height: 250px; */
   border-radius: 15px;
 }
 .card-posibility img:hover {
@@ -643,7 +650,7 @@ textarea {
     width: 600px;
   }
   .office-us-prev-img img {
-    margin-top: 2rem;
+    margin-top: 8rem;
     width: 750px;
 
     animation: move 2s infinite;
@@ -675,6 +682,9 @@ textarea {
     width: 400px;
     text-align: center;
     margin-left: 50rem;
+  }
+  #what-we-do q {
+    text-align: left;
   }
   .container-card {
     display: grid;
@@ -861,8 +871,8 @@ textarea {
     width: 350px;
   }
   .card-posibility img {
-    width: 300px;
-    height: 250px;
+    /* width: 300px;
+    height: 250px; */
     box-shadow: 5px 5px 5px 5px gray;
   }
   .card-posibility img:hover {

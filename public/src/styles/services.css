@@ -19,10 +19,11 @@
 }
 .child-services p {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 .child-services h1 {
   width: 380px;
+  text-align: center;
 }
 .child-services.general h1,
 .child-services h1 {
@@ -68,8 +69,9 @@
 }
 @media (min-width: 1000px) {
   .child-services p {
-    width: 1000px;
-    text-align: center;
+    width: 800px;
+    text-align: left;
+    margin-top: 2rem;
   }
   .card-services.container {
     grid-template-columns: repeat(3, 1fr);

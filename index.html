@@ -27,50 +27,55 @@
 <body>
   <nav>
     <div class='navbar flexNav'>
-      <div class='icon-cancun'>
+
+      <div id="home" class='icon-cancun'>
         <img src='./public/src/images/logo.gif' alt='' />
       </div>
 
-      <div class='navbarList'>
-        <ul class='nav'>
+      <div class="icono-menu">
+        <img src="/public/src/images/open-menu.png" id="icono-menu">
+      </div>
+
+      <div class="cont-menu active" id="menu">
+        <ul>
           <li>
-            <a href="./index.html">
+            <a href="./">
               INICIO
             </a>
           </li>
           <li>
-            <a location.href='' href='./html/aboutUs.html'>
+            <a href='./digital/nosotros'>
               NOSOTROS
             </a>
           </li>
           <li>
-            <a href="./html/solution.html">
+            <a href="./digital/soluciones">
               SOLUCIONES
             </a>
             <ul>
               <li>
-                <a href="./html/web-position.html">
+                <a href="./digital/soluciones-posicionamiento-web">
                   POSICIONAMIENTO WEB
                 </a>
               </li>
               <li>
-                <a href="./html/social-ads-solutions.html">SOCIAL ADS</a>
+                <a href="./digital/soluciones-ads">SOCIAL ADS</a>
               </li>
               <li>
-                <a href="./html/creative-solutions.html">
+                <a href="./digital/soluciones-creativas">
                   CONTENIDO CREATIVO
                 </a>
               </li>
               <li>
-                <a href="./html/network-socials.html">
+                <a href="./digital/soluciones-redes-sociales">
                   GESTION REDES SOCIALES
                 </a>
               </li>
               <li>
-                <a href="./html/graphics-solutions.html">DISEÑO</a>
+                <a href="./digital/soluciones-diseño">DISEÑO</a>
               </li>
               <li>
-                <a href="./html/email-marketing-solutions.html">EMAIL MARKETING</a>
+                <a href="./digital/soluciones-email-marketing">EMAIL MARKETING</a>
               </li>
             </ul>
           </li>
@@ -80,27 +85,23 @@
             </a>
           </li>
           <li>
-            <a href="./html/team.html">
+            <a href="./digital/equipo">
               EQUIPO
             </a>
           </li>
           <li>
-            <a href="./html/contactUs.html">
+            <a href="./digital/contactanos">
               CONTACTO
             </a>
           </li>
           <li>
             <a class='navText darkmode' href=''>
-              <i style="color: white" class='fa-regular fa-moon'></i>
+              <i class='fa-regular fa-moon'></i>
             </a>
           </li>
         </ul>
       </div>
-
-
-      <div class='burguer'>
-        <!-- <BurgerBtn clicked={clicked} handleClick={handleClick} /> -->
-      </div>
+      <div class="arrow-up"> <a href="#home"><img src="/public/src/images/flecha arriba.png"></a> </div>
       <div class='bgDiv'> </div>
   </nav>
   <div id="app">
@@ -117,14 +118,14 @@
         </div>
         <br />
       </div>
-      <div class='service-about'>
+      <div id="services-solutions" class='service-about'>
         <button class='btn btn-service'>
-          <a href="./html/solution.html">
+          <a href="./digital/soluciones">
             <strong>Soluciones</strong>
           </a>
         </button>
         <button class='btn btn-about'>
-          <a href="./html/aboutUs.html">
+          <a href="./digital/nosotros">
             <strong>Nosotros </strong>
           </a>
         </button>
@@ -341,7 +342,9 @@
             Internet.
           </q>
           <div class='btn-view-more-container cancun-section'>
-            <button class='btn-view-more cards '>Ver Todos</button>
+            <button class='btn-view-more cards '> <a style='background-color: transparent;'
+                href="./digital/nosotros.html">Ver
+                Todos </a> </button>
           </div>
         </div>
       </article>
@@ -437,7 +440,7 @@
       </article>
     </section>
     <div class='contact-container '>
-      <div data-aos="flip-up" class='form-contain'>
+      <div class='form-contain'>
         <h1>CONTACTANOS</h1>
         <br />
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -485,8 +488,8 @@
           </div>
         </form>
       </div>
-    </div>
 
+    </div>
 
 
   </div>
@@ -628,13 +631,13 @@
       </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src=" https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 1250,
     });
   </script>
-  <!-- <script type="module" src="/main.js"></script> -->
+  <script type="module" src="/index.js"></script>
 </body>
 
 </html>

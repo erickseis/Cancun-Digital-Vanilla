@@ -15,25 +15,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../src/styles/nav.css">
-  <link rel="stylesheet" href="../src/styles/aboutUs.css">
-  <link rel="stylesheet" href="../src/styles/contact.css">
-  <link rel="stylesheet" href="../src/styles/contactus.css">
-  <link rel="stylesheet" href="../src/styles/footer.css">
+  <link rel="stylesheet" href="./public/src/styles/nav.css">
+  <link rel="stylesheet" href="./public/src/styles/aboutUs.css">
+  <link rel="stylesheet" href="./public/src/styles/contact.css">
+  <link rel="stylesheet" href="./public/src/styles/contactus.css">
+  <link rel="stylesheet" href="./public/src/styles/footer.css">
   <title>Contacto || Cancún Digital</title>
 </head>
 
 <body>
   <nav>
     <div class='navbar flexNav'>
-      <div class='icon-cancun'>
-        <img src='../src/images/logo.gif' alt='' />
+
+      <div id="home" class='icon-cancun'>
+        <img src='./public/src/images/logo.gif' alt='' />
       </div>
 
-      <div class='navbarList'>
-        <ul class='nav'>
+      <div class="icono-menu">
+        <i id="icono-menu" class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="cont-menu active" id="menu">
+        <ul>
           <li>
-            <a href="../../">
+            <a href="./">
               INICIO
             </a>
           </li>
@@ -96,6 +101,7 @@
         </ul>
       </div>
   </nav>
+
   <div class='contact-container '>
     <div class='form-contain'>
       <h1>CONTACTANOS</h1>
@@ -152,7 +158,7 @@
         <div class='footer-child grid-container'>
           <div class='grid-child logo-cancun'>
             <p class='aling-left'>
-              <img src='../src/images/logo.gif' alt='' />
+              <img src='./public//src/images/logo.gif' alt='' />
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               consectetur dolor nesciunt facere,
@@ -238,22 +244,22 @@
               <ul class='list-logo'>
                 <li>
                   <span>
-                    <img src='../src/images/facebook-logo-3-1.png' alt='' />
+                    <img src='./public/src/images/network social/icon_face.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/twitter-icon.png' alt='' />
+                    <img src='./public/src/images/twitter-icon.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/network social/icon_insta.png' alt='' />
+                    <img src='./public/src/images/network social/icon_insta.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/network social/icon_linke.png' alt='' />
+                    <img src='./public/src/images/network social/icon_linke.png' alt='' />
                   </span>
                 </li>
               </ul>
@@ -284,6 +290,7 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="/index.js"></script>
   <!-- <script type="module" src="/main.js"></script> -->
 </body>
 

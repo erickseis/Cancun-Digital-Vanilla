@@ -534,7 +534,8 @@ textarea {
   margin-top: 3rem;
 }
 .arrow-up {
-  background-color: #09c3a182;
+  padding: 1rem 1rem;
+  opacity: 50%;
   border-radius: 50%;
   margin-right: 0;
   bottom: 0;
@@ -542,12 +543,11 @@ textarea {
   position: fixed;
 }
 .arrow-up:hover {
-  background-color: #09c3a1;
+  opacity: 99%;
   z-index: 10000;
 }
 
 .arrow-up img {
-  padding: 10px 10px;
   width: 50px;
 }
 

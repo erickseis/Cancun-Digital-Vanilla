@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name='desciption'
-    content='Empleando esta herramienta, podras comunicarte digitalmente con leads y clientes a través del envío masivo de correos electrónicos a una base de contactos.' />
+  <meta name='desciption' content='Generamos contenido creativo para tu empresa.' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,26 +15,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../src/styles/nav.css">
-  <link rel="stylesheet" href="../src/styles/email.css">
-  <link rel="stylesheet" href="../src/styles/contact.css">
-  <link rel="stylesheet" href="../src/styles/footer.css">
-
-
-  <title>Soluciones Email Marketing</title>
+  <link rel="stylesheet" href="./public/src/styles/nav.css">
+  <link rel="stylesheet" href="./public/src/styles/creative.css">
+  <link rel="stylesheet" href="./public/src/styles/contact.css">
+  <link rel="stylesheet" href="./public/src/styles/footer.css">
+  <title>Soluciones Creativas</title>
 </head>
 
 <body>
   <nav>
     <div class='navbar flexNav'>
-      <div class='icon-cancun'>
-        <img src='../src/images/logo.gif' alt='' />
+
+      <div id="home" class='icon-cancun'>
+        <img src='./public/src/images/logo.gif' alt='' />
       </div>
 
-      <div class='navbarList'>
-        <ul class='nav'>
+      <div class="icono-menu">
+        <i id="icono-menu" class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="cont-menu active" id="menu">
+        <ul>
           <li>
-            <a href="../../">
+            <a href="./">
               INICIO
             </a>
           </li>
@@ -99,14 +101,15 @@
       </div>
   </nav>
 
-  <div class='email-container-general'>
-    <div class='container-img-title-email web'>
-      <img src='../src/images/SVG/mail.svg' alt='' />
+
+  <div class='creative-container-general'>
+    <div class='container-img-title-creative web'>
+      <img src='./public/src/images/SVG/creative.svg' alt='' />
     </div>
-    <div class='wave email'></div>
-    <div class='wave2 email'></div>
-    <div class='wave3 email'></div>
-    <h1>EMAIL MARKETING</h1>
+    <div class='wave creative'></div>
+    <div class='wave2 creative'></div>
+    <div class='wave3 creative'></div>
+    <h1>CONTENIDO CREATIVO</h1>
     <br />
     <br />
     <br />
@@ -117,52 +120,53 @@
       Non, laborum?
     </p>
   </div>
-  <div class='container-email'>
-    <div class='email-description-card'>
-      <img src='../src/images/email/text.png' alt='' />
-      <h4>Contenido Texto</h4>
+  <div class='container-creative'>
+    <div class='creative-description-card'>
+      <img src='/public/src/images/creative/ideas.png' alt='' />
+      <h4>Ideas</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor a
         doloribus
       </p>
     </div>
-    <div class='email-description-card'>
-      <img src='../src/images/email/objetivos.png' alt='' />
+    <div class='creative-description-card'>
+      <img src='/public/src/images/creative/objetivos.png' alt='' />
 
-      <h4>Banner para Campaña</h4>
+      <h4>Objetivos</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor a
         doloribus
       </p>
     </div>
-    <div class='email-description-card'>
-      <img src='../src/images/email/diseñoweb.png' alt='' />
+    <div class='creative-description-card'>
+      <img src='/public/src/images/creative/formatos.png' alt='' />
 
-      <h4>Diseño Web</h4>
+      <h4>Formatos</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor a
         doloribus
       </p>
     </div>
-    <div class='email-description-card'>
-      <img src='../src/images/email/icon_segmentacionj.png' alt='' />
+    <div class='creative-description-card'>
+      <img src='/public/src/images/creative/desarrollo.png' alt='' />
 
-      <h4>Segmentacion</h4>
+      <h4>Desarrollo</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor a
         doloribus
       </p>
     </div>
-    <div class='email-description-card'>
-      <img src='../src/images/email/analisis.png' alt='' />
+    <div class='creative-description-card'>
+      <img src='/public/src/images/creative/analisis.png' alt='' />
 
-      <h4>Análisis</h4>
+      <h4>Analisis</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor a
         doloribus
       </p>
     </div>
   </div>
+
   <div class='contact-container '>
     <div class='form-contain'>
       <h1>CONTACTANOS</h1>
@@ -214,13 +218,16 @@
     </div>
   </div>
 
+
+
+
   <footer>
     <div class='footer-contain'>
       <footer class='footer'>
         <div class='footer-child grid-container'>
           <div class='grid-child logo-cancun'>
             <p class='aling-left'>
-              <img src='../src/images/logo.gif' alt='' />
+              <img src='./public//src/images/logo.gif' alt='' />
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               consectetur dolor nesciunt facere,
@@ -306,22 +313,22 @@
               <ul class='list-logo'>
                 <li>
                   <span>
-                    <img src='../src/images/facebook-logo-3-1.png' alt='' />
+                    <img src='./public/src/images/network social/icon_face.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/twitter-icon.png' alt='' />
+                    <img src='./public/src/images/twitter-icon.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/network social/icon_insta.png' alt='' />
+                    <img src='./public/src/images/network social/icon_insta.png' alt='' />
                   </span>
                 </li>
                 <li>
                   <span>
-                    <img src='../src/images/network social/icon_linke.png' alt='' />
+                    <img src='./public/src/images/network social/icon_linke.png' alt='' />
                   </span>
                 </li>
               </ul>
@@ -352,6 +359,7 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="/index.js"></script>
   <!-- <script type="module" src="/main.js"></script> -->
 </body>
 

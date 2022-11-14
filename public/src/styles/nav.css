@@ -30,18 +30,19 @@
     z-index: 10000;
   }
 
-  .icono-menu img {
-    vertical-align: top;
-    width: 40px;
-    cursor: pointer;
+  .icono-menu i {
+    color: white;
+    font-size: 35px;
   }
 
   /* Estilos para el contenedor del Menú */
   .cont-menu {
-    background-color: #09c3a1;
-    border-radius: 0% 100% 47% 53% / 100% 53% 47% 0%;
+    background-image: url('../images/Live-Wave-Background.svg');
+    transform: rotate(2deg);
+    background-color: #09c3a1ec;
+    /* border-radius: 0% 100% 47% 53% / 100% 53% 47% 0%; */
     box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
-    width: 400px;
+    width: 350px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -57,7 +58,7 @@
 
   /* Estilos para el listado del Menú */
   .cont-menu ul {
-    padding: 50px 0px 20px 0px;
+    padding: 70px 0px 20px 0px;
     list-style: none;
     text-decoration: none;
   }
@@ -71,10 +72,14 @@
     cursor: pointer;
     list-style: none;
   }
+  .cont-menu ul li ul li {
+    margin-top: -1rem;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
 
   .cont-menu ul li a {
     color: white;
-
     list-style: none;
   }
 
@@ -90,12 +95,25 @@
     position: fixed;
     z-index: 1230;
   }
+  .navbar {
+    padding: 0 14rem;
+    margin-left: -5rem;
+  }
+  #index {
+    margin-left: 0rem;
+    padding: 0 10rem;
+  }
   .icon-cancun {
-    margin-left: 16rem;
-    margin-right: -20rem;
+    margin-left: 10rem;
+  }
+  .icono-menu {
+    display: none;
   }
   .icono-menu img {
     display: none;
+  }
+  #home {
+    margin-left: 5rem;
   }
   .cont-menu {
     display: block;

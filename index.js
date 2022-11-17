@@ -82,7 +82,7 @@ const renderResult = async (news) => {
       <h4> ${newn.title}</h4>
       <p>${newn.content_text.slice(0, 200)}...</p>
       <br />
-      <img src="./public/src/images/news.png" alt="imagen" />
+      <img src="https://images.vexels.com/media/users/3/147149/isolated/preview/b80672b8545a4c8d9a04e7df58d4dc1b-icono-de-periodico-de-noticias.png" />
       <a href='${newn.url}'>https://cancundigital.com.mx/blog</a>
       </div>
     `
@@ -102,7 +102,7 @@ const renderUltimateResult = async (ultimateNew) => {
       <p>${newn.content_text.slice(0, 500)}...</p>
       <br />
       <div class="img-ultimateNew">
-      <img src="./public/src/images/news.png" alt="imagen" />
+      <img src="https://images.vexels.com/media/users/3/147149/isolated/preview/b80672b8545a4c8d9a04e7df58d4dc1b-icono-de-periodico-de-noticias.png" />
       </div>
       <a href="${newn.url}">https://cancundigital.com.mx/blog</a>
       </div>

@@ -12,55 +12,13 @@
   width: 100%;
   height: 110vh;
   padding: 0rem 1.5rem;
+  text-align: center;
 }
-.wave.creative,
-.wave2.creative,
-.wave3.creative {
-  position: absolute;
-  bottom: 28rem;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-image: url(../images/wave.png);
-  background-size: 1000px 100px;
-  animation: wave 8s linear infinite;
-}
-@keyframes wave {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
-}
-.wave2 {
-  animation: wave2 11s linear infinite;
-  opacity: 20%;
-}
-@keyframes wave2 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
-}
-.wave3 {
-  animation: wave3 12s linear infinite;
-  opacity: 20%;
-}
-@keyframes wave3 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
-}
+
 .creative-container-general h1 {
   font-size: 32px;
   font-family: Arvo;
-  margin-top: -13rem;
+  margin-top: -9rem;
   color: white;
   opacity: 99%;
 }
@@ -91,7 +49,7 @@
   place-items: center;
   margin-bottom: 2rem;
   width: 350px;
-  height: 250px;
+  height: 350px;
   padding: 1rem 0;
 }
 .creative-description-card:hover {
@@ -105,6 +63,7 @@
 .creative-description-card p {
   margin-top: 1rem;
   padding: 0 2rem;
+  text-align: left;
 }
 
 @media (min-width: 1000px) {
@@ -138,11 +97,12 @@
     text-align: center;
   }
   .creative-container-general p {
-    margin-top: 15rem;
     text-align: center;
     padding: 0 20rem;
+    margin-bottom: 10rem;
   }
   .container-creative {
+    margin-top: -15rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -154,7 +114,6 @@
   .creative-description-card {
     display: grid;
     place-items: center;
-    margin-bottom: 5rem;
   }
 
   .creative-description-card img {
@@ -162,11 +121,5 @@
   }
   .creative-description-card p {
     margin-top: 1rem;
-  }
-  .wave.creative,
-  .wave2.creative,
-  .wave3.creative {
-    position: absolute;
-    top: 20rem;
   }
 }

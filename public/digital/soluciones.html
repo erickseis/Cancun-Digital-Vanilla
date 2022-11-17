@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="desciption"
-    content="Contacta con Cancún Digital es una empresa de marketing digital enfocada a optimizar la inversion de las campañas digitales. ¡Contáctanos!" />
+  <meta name="description" content="Contacta con Cancún Digital es una empresa de marketing digital enfocada a optimizar la inversion de las campañas digitales. ¡Contáctanos!" />
+  <link rel="canonical" href="https://cancundigital.com.mx/soluciones">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,13 +16,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../src/styles/navbar.css">
-  <link rel="stylesheet" href="../src/styles/services.css">
+  <link rel="stylesheet" href="../src/styles/navbarr.css">
+  <link rel="stylesheet" href="../src/styles/solutionss.css">
   <link rel="stylesheet" href="../src/styles/contact.css">
-  <link rel="stylesheet" href="../src/styles/footerr.css">
+  <link rel="stylesheet" href="../src/styles/footerrrr.css">
 
 
-  <title>Soluciones || Cancún Digital</title>
+  <title>Soluciones | Agencia de Publicidad en Cancún</title>
 </head>
 
 <body>
@@ -30,7 +30,9 @@
     <div class='navbar flexNav'>
 
       <div id="home" class='icon-cancun'>
-        <img src='../src/images/logo.gif' alt='' />
+        <a href="../../">
+          <img src='../src/images/logo.gif' alt='imagen' />
+        </a>
       </div>
 
       <div class="icono-menu">
@@ -75,9 +77,7 @@
               <li>
                 <a href="./soluciones-diseño">DISEÑO</a>
               </li>
-              <li>
-                <a href="./soluciones-email-marketing">EMAIL MARKETING</a>
-              </li>
+              
             </ul>
           </li>
           <li>
@@ -96,9 +96,9 @@
             </a>
           </li>
           <li>
-            <a class='navText darkmode' href=''>
+            <div class='navText darkmode'>
               <i class='fa-regular fa-moon'></i>
-            </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -118,47 +118,49 @@
         Garantizando excelentes resultados para su marca o el servicio que tengan para el público al cual van dirigidos.
         <br>
         <br>
-        Deseamos trabajar contigo, solicita tu presupuesto sobre todos los servicios que prestamos y da un gran paso
-        dentro del mundo digital. 
+        <strong>Deseamos trabajar contigo, solicita tu presupuesto sobre todos los servicios que prestamos y da un gran
+          paso
+          dentro del mundo digital.</strong>
+         
       </p>
     </div>
   </div>
 
   <div class='card-services container'>
     <div class='card-services-child'>
-      <img class='img-social-ads' src='../src/images/SVG/webPosition1.svg' />
+      <img class='img-social-ads' src='../src/images/SVG/webPosition1.svg' alt="imagen" />
       <h4>
-        <a>POSICIONAMIENTO WEB</a>
+        <a href="./soluciones-posicionamiento-web">POSICIONAMIENTO WEB</a>
       </h4>
     </div>
     <div class='card-services-child'>
-      <img id='img-social-ads' class='img-social-ads' src='../src/images/SVG/socialAds.svg' alt='' />
+      <img id='img-social-ads' class='img-social-ads' src='../src/images/SVG/socialAds.svg' alt='imagen' />
       <h4>
-        <a>SOCIAL ADS</a>
+        <a href="./soluciones-ads">SOCIAL ADS</a>
       </h4>
     </div>
     <div class='card-services-child'>
-      <img id='img-graphic' class='img-social-ads' src='../src/images/SVG/creative.svg' alt='' />
+      <img id='img-graphic' class='img-social-ads' src='../src/images/SVG/creative.svg' alt='imagen' />
       <h4>
-        <a>CONTENIDO CREATIVO</a>
+        <a href="./soluciones-creativas">CONTENIDO CREATIVO</a>
       </h4>
     </div>
     <div class='card-services-child'>
-      <img id='network-img' class='img-social-ads' src='../src/images/SVG/netSocials2.svg' alt='' />
+      <img id='network-img' class='img-social-ads' src='../src/images/SVG/netSocials2.svg' alt='imagen' />
       <div class='contain-social-network'>
         <h4>
-          <a>GESTIÓN REDES SOCIALES</a>
+          <a href="./soluciones-redes-sociales">GESTIÓN REDES SOCIALES</a>
         </h4>
       </div>
     </div>
     <div class='card-services-child'>
-      <img class='img-social-ads' src='../src/images/SVG/graphics.svg' alt='' />
+      <img class='img-social-ads' src='../src/images/SVG/graphics.svg' alt='imagen' />
       <h4>
-        <a>DISEÑO</a>
+        <a href="./soluciones-diseño">DISEÑO</a>
       </h4>
     </div>
     <div class='card-services-child'>
-      <img id='img-email' class='img-social-ads' src='../src/images/SVG/mail.svg' alt='' />
+      <img id='img-email' class='img-social-ads' src='../src/images/SVG/mail.svg' alt='imagen' />
       <h4>
         <a>EMAIL MARKETING</a>
       </h4>
@@ -167,192 +169,164 @@
 
   <div class='contact-container '>
     <div class='form-contain'>
-      <h1>CONTACTANOS</h1>
+      <h1>CONTÁCTANOS</h1>
       <br />
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form id="form" action="https://formspree.io/f/mdojbgqa" method="POST">
         <div>
-          <label>
+          <label for="mail">
             Correo <span>*</span>
           </label>
           <br />
-          <input />
+          <input id="mail" type="email" name="mail" />
         </div>
         <div>
-          <label>
+          <label for="name">
             Nombre <span>*</span>
           </label>
           <br />
-          <input />
+          <input id="name" type="text" name="name" />
         </div>
         <div>
-          <label>Apellido</label>
+          <label for="apellido">Apellido</label>
           <br />
-          <input />
+          <input id="apellido" type="text" name="apellido" />
         </div>
         <div>
-          <label>
+          <label for="phone">
             Telefono de contacto <span>*</span>
           </label>
           <br />
-          <input />
+          <input id="phone" type="phone" name="phone" />
 
         </div>
         <div>
-          <label>Pais/region</label>
+          <label for="region">Pais/region</label>
           <br />
-          <input />
+          <input id="region" type="text" name="region" />
         </div>
-        <label>
+        <label for="message">
           Mensaje <span>*</span>
         </label>
         <br />
-        <textarea></textarea>
-
+        <textarea id="message" name="message"></textarea>
         <br />
         <div class='flex'>
           <input class='btn submit' type='submit' value='Enviar' />
         </div>
       </form>
     </div>
-  </div>
-  <footer>
-    <div class='footer-contain'>
-      <footer class='footer'>
-        <div class='footer-child grid-container'>
-          <div class='grid-child logo-cancun'>
-            <p class='aling-left'>
-              <img src='../src/images/logo.gif' alt='' />
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              consectetur dolor nesciunt facere,
-            </p>
-          </div>
-          <div class='grid-child'>
-            <ul class='list-contain access-direct'>
-              <li>
-                <a class='li' to='/'>
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/about'>
-                  Nosotros
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Posicionamiento Web
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Social ads
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
+    </div>
 
-                  Contenido creativo
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Gestion redes sociales
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Diseño
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Email marketing
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class='grid-child'>
-            <ul class='list-contain success-stories'>
-              <li>
-                <a class='li' to='/'>
-                  Casos de exito
-                </a>
-              </li>
-              <li>
-                <a class='li' to='/'>
-                  Clientes
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class='grid-child'>
-            <ul class='list-contain'>
-              <li>
-                <a class='li' to='/blog'>
-                  Blog
-                  </Link>
-              </li>
-              <li>
-                <Link class='li' to='/contact'>
-
-                Contacto
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div class='grid-child'>
-            <div class='logo-network contain'>
-              <h4>Siguenos</h4>
-              <ul class='list-logo'>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class='footer-contain'>
+        <footer class='footer'>
+          <div class='footer-child grid-container'>
+            <div class='grid-child logo-cancun'>
+              <p class='aling-left'>
+                <img src='../src/images/logo250x200.gif' alt='imagen' />
+                <br />
+                <q> 
+                  Empieza a conocer todo lo que el mundo digital tiene para dar un gran salto contigo
+                </q> 
+              </p>
+            </div>
+            <div class='grid-child'>
+              <ul class='list-contain access-direct'>
                 <li>
-                  <span>
-                    <img src='../src/images/network social/icon_face.png' alt='' />
-                  </span>
+                  <a href="./">
+                    Inicio
+                  </a>
                 </li>
                 <li>
-                  <span>
-                    <img src='../src/images/twitter-icon.png' alt='' />
-                  </span>
+                  <a href="./nosotros">
+                    Nosotros
+                  </a>
                 </li>
                 <li>
-                  <span>
-                    <img src='../src/images/network social/icon_insta.png' alt='' />
-                  </span>
+                  <a href="./soluciones">
+                    Soluciones
+                  </a>
+                </li>             
+              </div>
+            <div class='grid-child'>
+              <ul class='list-contain'>
+                <li>
+                  <a href='https://cancundigital.com.mx/blog/'>
+                    Blog
+                  </a>
                 </li>
                 <li>
-                  <span>
-                    <img src='../src/images/network social/icon_linke.png' alt='' />
-                  </span>
+                  <a href='./equipo'>
+                    Equipo
+                  </a>
+                </li>
+                <li>
+                  <a href="./contactanos">
+                    Contacto
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class='contact-us-contain '>
-              <h4>Encuentranos</h4>
-              <ul class='list-data'>
-                <li>
-                  <i class='fa-regular fa-envelope'></i>
-                  info@cancundigital.com.mx
-                </li>
-                <li>
-                  <i class='fa-solid fa-phone'></i> numero telefono fijo
-                </li>
-                <li>
-                  <i class='fa-solid fa-mobile-screen'></i> +529983870579
-                </li>
-              </ul>
+            <div class='grid-child'>
+              <div class='logo-network contain'>
+                <h4>Siguenos</h4>
+                <ul class='list-logo'>
+                  <li>
+                    <span>
+                      <img src='../src/images/network social/icon_face.png' alt='imagen' />
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <img src='../src/images/twitter-icon.png' alt='imagen' />
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <img src='../src/images/network social/icon_insta.png' alt='imagen' />
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <img src='../src/images/network social/icon_linke.png' alt='imagen' />
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class='contact-us-contain '>
+                <h4>Encuéntranos</h4>
+                <ul class='list-data'>
+                  <li>
+                    <i class='fa-regular fa-envelope'> | </i>
+                    info@cancundigital.com.mx
+                  </li>
+                
+                  <li>
+                    <i class='fa-solid fa-mobile-screen'> | </i> +529983870579
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-location-dot"> | </i>Av. Bonampak, Manzana 1,Lote 4 y 5, Local SA 2, Super Manzana 8, 77504 Cancún, Q.R. 
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-      <div class='container-boder-botton'>
-        <div class='border-botton'>
-          <br />
-          <p>@Cancún Digital, todos los derechos reservados</p>
+        </footer>
+        <div class='container-boder-botton'>
+          <div class='border-botton'>
+            <img src="../src/images/logo250x200.gif" alt="imagen logo">
+            <br>
+              <div>
+              <p>Agencia de marketing digital en Cancún & CDMX.</p>
+              <p>© 2022 Cancún Digital Marketing. All rights reserved.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   <script type="module" src="../src/js/js.js"></script>
   <!-- <script type="module" src="/main.js"></script> -->
 </body>

@@ -42,15 +42,19 @@ html {
   justify-content: center;
   align-items: center;
 }
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+p {
+  font-size: 15px;
+}
 .service-about {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* left: 50%;
-  right: 50%; */
   margin-top: -6rem;
   margin-left: 2rem;
-  /* margin-bottom: 10rem; */
   gap: 2rem;
   z-index: 1000;
   position: absolute;
@@ -111,17 +115,13 @@ h2 {
   position: absolute;
   opacity: 30%;
 }
-/* .backgroundImage {
-  margin-top: 5rem;
-  width: 500px;
-} */
+
 .img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
-  /* margin-left: -5rem; */
 }
 .img-home {
   width: 250px;
@@ -236,6 +236,7 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: justify;
+  /* font-size: 15px; */
 }
 
 .btn-view-more,
@@ -255,9 +256,7 @@ h2 {
 .text-desing h1 {
   text-align: center;
 }
-.text-desing p {
-  text-align: left;
-}
+
 .container-card {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -378,10 +377,10 @@ h2 {
   margin-bottom: 2rem;
   width: 50px;
 }
-.img-contain.news {
+/* .img-contain.news {
   margin-bottom: 2rem;
   margin-top: 1rem;
-}
+} */
 
 .img-contain img {
   width: 350px;
@@ -466,9 +465,9 @@ h2 {
 }
 .card-steps p {
   position: absolute;
-  top: 8rem;
+  top: 9rem;
   bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 .img-steps {
   position: absolute;
@@ -548,6 +547,7 @@ textarea {
   bottom: 0;
   margin-top: 55rem;
   position: fixed;
+  z-index: 100000;
 }
 .arrow-up:hover {
   opacity: 99%;
@@ -556,6 +556,92 @@ textarea {
 
 .arrow-up img {
   width: 50px;
+}
+.center-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-n {
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 100;
+}
+.card-n img {
+  /* margin-top: -2.5rem; */
+  width: 100px;
+  position: absolute;
+  bottom: 4.5rem;
+}
+.card-n p {
+  margin-top: 2rem;
+}
+.card-n a {
+  width: 300px;
+  position: absolute;
+  padding-left: 1rem;
+  text-align: center;
+  bottom: 1rem;
+  left: -0rem;
+  text-decoration: none;
+  color: black;
+}
+.card-n h4 {
+  width: 300px;
+  position: absolute;
+  top: 1rem;
+}
+
+.ultimate-New {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-nn {
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 100;
+}
+.card-nn img {
+  /* margin-top: -2.5rem; */
+  width: 150px;
+  position: absolute;
+  left: 7rem;
+  bottom: 3rem;
+}
+.card-nn a {
+  position: absolute;
+  bottom: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.card-nn h4 {
+  position: absolute;
+  top: 0;
+  margin-top: 1rem;
 }
 
 @media (min-width: 1000px) {
@@ -647,7 +733,7 @@ textarea {
     text-align: center;
   }
   .office-us img {
-    width: 600px;
+    width: 100%;
   }
   .office-us-prev-img img {
     margin-top: 8rem;
@@ -782,64 +868,45 @@ textarea {
   .news-section-container {
     margin-top: -15rem;
     position: relative;
-    height: 200vh;
+    height: 235vh;
     background: linear-gradient(-10deg, #edf4f8 70%, white 20%);
-    z-index: -5;
-  }
-  .title-news {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
   }
 
   .news-container {
-    z-index: 100;
-    margin-top: 35rem;
-    width: 100%;
-    display: inline-block;
-  }
-  .ultimate-news-container {
-    background-color: white;
-    margin-left: 6rem;
-    margin-right: 1rem;
-    display: block;
-    float: left;
-    width: 500px;
-    height: 600px;
-  }
-  .ultimate-news {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 5px;
-  }
-  .img-contain.news1 img {
-    width: 450px;
-    height: 350px;
-  }
-  .img-contain img {
-    width: 250px;
-    height: 200px;
-  }
-  .card-news-container {
+    margin-top: 14rem;
+    width: 800px;
     display: grid;
-    text-align: left;
-    place-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
-    border-radius: 5px;
-    padding-bottom: 1rem;
+    position: relative;
+    top: 45rem;
   }
-  .card-news {
-    width: 250px;
-    margin-left: -2rem;
+  .card-n {
+    width: 400px;
+    background-color: transparent;
+    box-shadow: none;
   }
+  .card-n img {
+    width: 100px;
+    position: absolute;
+    bottom: 4.5rem;
+  }
+  .card-n a {
+    width: 350px;
+    position: absolute;
+    /* text-align: left; */
+    bottom: 1rem;
+    left: 1;
+  }
+  .card-n p {
+    width: 350px;
+  }
+  .card-n h4 {
+    width: 350px;
+    position: absolute;
+    top: 1rem;
+  }
+
   .child-clientus {
     width: 100%;
     display: flex;
@@ -940,14 +1007,14 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
+
   .card-steps p {
     position: absolute;
     bottom: 0;
-    text-align: center;
+    text-align: justify;
     padding: 0 2rem;
   }
   .img-steps {
@@ -1010,5 +1077,61 @@ textarea {
   }
   .arrow-up {
     display: none;
+  }
+
+  .ultimate-New {
+    /* background-color: #fff; */
+    margin-left: 6rem;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    display: block;
+    float: left;
+    width: 500px;
+    height: 600px;
+  }
+  .center-new {
+    display: block;
+  }
+  .card-nn {
+    top: 39rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -4rem;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
+  }
+  .img-ultimateNew {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .card-nn img {
+    position: absolute;
+    width: 150px;
+    bottom: 5rem;
+    left: 35%;
+  }
+  .card-nn h4 {
+    width: 400px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .card-nn p {
+    width: 400px;
+  }
+  .card-nn a {
+    width: 400px;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
   }
 }

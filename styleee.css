@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +10,13 @@ html {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
+
 #img-letras2 {
-  /* width: 1000px; */
-  /* width: 400px;
-  height: 500px; */
   opacity: 99%;
   margin-top: -5rem;
-  /* position: absolute; */
   z-index: -1;
 }
+
 #img-letras {
   display: none;
 }
@@ -26,6 +25,7 @@ html {
   display: flex;
   justify-content: center;
 }
+
 .container-general {
   position: relative;
   width: 100%;
@@ -42,13 +42,16 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 h4 {
   text-align: center;
   font-size: 25px;
 }
+
 p {
   font-size: 15px;
 }
+
 .service-about {
   display: flex;
   justify-content: center;
@@ -59,6 +62,7 @@ p {
   z-index: 1000;
   position: absolute;
 }
+
 .title h1,
 h2 {
   font-size: 80px;
@@ -70,6 +74,7 @@ h2 {
   text-align: center;
   margin-top: 3rem;
 }
+
 .title h2 {
   text-align: center;
   font-size: 40px;
@@ -89,18 +94,22 @@ h2 {
   box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.532);
   z-index: 1;
 }
+
 .btn a {
   color: white;
   font-size: 16px;
 }
+
 .btn-service:hover {
   transform: scale(1.1);
   box-shadow: 10px 5px 10px 0px rgb(0, 0, 0);
 }
+
 .btn-about {
   background-color: #09c3a1;
   box-shadow: 10px 5px 10px 0px rgba(8, 8, 8, 0.532);
 }
+
 .btn-about:hover {
   background-color: #09c3a1;
   box-shadow: 10px 5px 10px 0px rgba(0, 0, 0, 0.279);
@@ -123,6 +132,7 @@ h2 {
   justify-content: center;
   margin-bottom: 3rem;
 }
+
 .img-home {
   width: 250px;
   opacity: 85%;
@@ -153,6 +163,7 @@ h2 {
     transform: scale(1);
   }
 }
+
 .container-aboutus p {
   text-align: justify;
 }
@@ -164,6 +175,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .office-us {
   display: flex;
   flex-direction: column;
@@ -172,6 +184,7 @@ h2 {
   margin-top: 10rem;
   text-align: center;
 }
+
 .office-us img {
   width: 300px;
 }
@@ -189,49 +202,60 @@ h2 {
   animation: wave 8s linear infinite;
   z-index: 1;
 }
+
 @keyframes wave {
   0% {
     background-position-x: 0;
   }
+
   100% {
     background-position-x: 1000px;
   }
 }
+
 .wave2 {
   animation: wave2 11s linear infinite;
   opacity: 20%;
 }
+
 @keyframes wave2 {
   0% {
     background-position-x: 0;
   }
+
   100% {
     background-position-x: 1000px;
   }
 }
+
 .wave3 {
   animation: wave3 12s linear infinite;
   opacity: 20%;
 }
+
 @keyframes wave3 {
   0% {
     background-position-x: 0;
   }
+
   100% {
     background-position-x: 1000px;
   }
 }
+
 .text-desing {
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 2rem;
 }
+
 .text-desing h1 {
   border-bottom: 3px solid #52a7e0;
   font-size: 31px;
   font-family: Arvo;
 }
+
 .text-desing p {
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -253,6 +277,7 @@ h2 {
 .description-about h1 {
   text-align: center;
 }
+
 .text-desing h1 {
   text-align: center;
 }
@@ -277,6 +302,7 @@ h2 {
   padding: 0.5rem 1rem;
   box-shadow: 0px 5px 10px 5px rgba(202, 199, 199, 0.795);
 }
+
 .card:hover {
   box-shadow: 0px 5px 10px 5px #09c3a1b4;
 }
@@ -288,9 +314,11 @@ h2 {
   position: absolute;
   z-index: -200;
 }
+
 .card-container-succes-stories {
   width: 100%;
 }
+
 .card-stories {
   position: relative;
   margin-top: 2rem;
@@ -310,6 +338,7 @@ h2 {
   padding-right: 2rem;
   text-align: center;
 }
+
 .img-logo {
   display: flex;
   margin-top: -6rem;
@@ -322,6 +351,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
 .img-logo img {
   overflow: hidden;
   width: 100px;
@@ -338,13 +368,16 @@ h2 {
   color: white;
   margin-top: 12rem;
 }
+
 .btn-view-more-container {
   display: flex;
   justify-content: center;
 }
+
 .btn-view-more.cards {
   align-items: center;
 }
+
 .container-cancun-section {
   display: flex;
   flex-direction: column;
@@ -355,18 +388,22 @@ h2 {
   background-color: #09c3a1;
   margin-top: 2rem;
 }
+
 .img-logo-container img {
   margin-top: -2rem;
   width: 250px;
   height: 200px;
 }
+
 .container-cancun-section q {
   color: white;
   margin-bottom: 1rem;
 }
+
 .cancun-section button {
   background-color: #d6a724;
 }
+
 .logo-container.clients {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -377,6 +414,7 @@ h2 {
   margin-bottom: 2rem;
   width: 50px;
 }
+
 /* .img-contain.news {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -387,11 +425,13 @@ h2 {
   height: 280px;
   border-radius: 5px;
 }
+
 .font-info {
   width: 100%;
   padding: 0.5rem;
   display: flex;
 }
+
 .font-img img {
   margin-right: 0.5rem;
   width: 70px;
@@ -413,21 +453,26 @@ h2 {
   width: 100%;
   padding: 2rem 0;
 }
+
 .card-posibility img {
   /* width: 300px;
   height: 250px; */
   border-radius: 15px;
 }
+
 .card-posibility img:hover {
   animation: card3 2s ease-in-out;
 }
+
 @keyframes card3 {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(20deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -440,6 +485,7 @@ h2 {
   place-items: center;
   gap: 0rem;
 }
+
 .card-steps {
   display: flex;
   flex-direction: column;
@@ -455,6 +501,7 @@ h2 {
 .text-desing.steps {
   width: 100%;
 }
+
 .text-steps {
   display: flex;
   align-items: center;
@@ -463,12 +510,14 @@ h2 {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+
 .card-steps p {
   position: absolute;
   top: 9rem;
   bottom: 0;
   text-align: left;
 }
+
 .img-steps {
   position: absolute;
   width: 100px;
@@ -484,6 +533,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   z-index: 1000;
 }
+
 .form-contain {
   margin-top: 10rem;
   background-color: rgb(255, 255, 255);
@@ -496,14 +546,18 @@ h2 {
   width: 350px;
   height: 900px;
 }
+
 .form-contain h1 {
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-family: Arvo;
 }
+
 div p {
-  margin-bottom: 1rem;
+  margin-bottom: -24rem;
+  margin-left: 1rem;
 }
+
 input {
   padding: 0 15px;
   text-align: left;
@@ -520,6 +574,7 @@ input {
 label span {
   color: red;
 }
+
 textarea {
   margin-top: 1.5rem;
   width: 100%;
@@ -533,12 +588,14 @@ textarea {
   width: 100px;
   height: 40px;
 }
+
 .btn.submit {
   text-align: center;
   font-weight: bold;
   color: white;
   margin-top: 3rem;
 }
+
 .arrow-up {
   padding: 1rem 1rem;
   opacity: 50%;
@@ -549,6 +606,7 @@ textarea {
   position: fixed;
   z-index: 100000;
 }
+
 .arrow-up:hover {
   opacity: 99%;
   z-index: 10000;
@@ -557,17 +615,19 @@ textarea {
 .arrow-up img {
   width: 50px;
 }
+
 .center-new {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .card-n {
   width: 350px;
   height: 450px;
   background-color: white;
-  box-shadow: 5px 5px 5px 5px gray;
+  box-shadow: 5px 5px 10px 2px #80808063;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -578,15 +638,18 @@ textarea {
   position: relative;
   z-index: 100;
 }
+
 .card-n img {
   /* margin-top: -2.5rem; */
   width: 100px;
   position: absolute;
   bottom: 4.5rem;
 }
+
 .card-n p {
-  margin-top: 2rem;
+  margin-top: 18rem;
 }
+
 .card-n a {
   width: 300px;
   position: absolute;
@@ -595,12 +658,14 @@ textarea {
   bottom: 1rem;
   left: -0rem;
   text-decoration: none;
-  color: black;
+  color: #0c6958;
 }
+
 .card-n h4 {
   width: 300px;
   position: absolute;
   top: 1rem;
+  color: #09c3a1;
 }
 
 .ultimate-New {
@@ -610,11 +675,12 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 .card-nn {
   width: 350px;
   height: 600px;
   background-color: white;
-  box-shadow: 5px 5px 5px 5px gray;
+  box-shadow: 5px 5px 10px 2px #80808063;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -625,55 +691,67 @@ textarea {
   position: relative;
   z-index: 100;
 }
+.card-n p {
+  margin-top: -5rem;
+  text-align: justify;
+}
+
 .card-nn img {
-  /* margin-top: -2.5rem; */
   width: 150px;
   position: absolute;
   left: 7rem;
   bottom: 3rem;
 }
+
 .card-nn a {
   position: absolute;
   bottom: 1rem;
   text-decoration: none;
-  color: black;
+  color: #0c6958;
 }
+
 .card-nn h4 {
   position: absolute;
   top: 0;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  color: #09c3a1;
 }
+
 .card-nn-img {
   position: absolute;
   z-index: 200;
-  margin-top: -11rem;
-  margin-left: -6rem;
+  margin-top: -28rem;
+  margin-left: -9.5rem;
 }
+
 .card-nn-img img {
-  width: 200px;
+  width: 300px;
+  height: 250px;
+  box-shadow: 0px 0px 10px 2px #52a7e0;
 }
+
 .card-n-img {
   position: absolute;
   z-index: 200;
-  margin-top: -100rem;
-  margin-left: -6rem;
-}
-.card-n-img0 {
-  margin-top: -72rem;
-}
-.card-n-img0 img {
-  /* width: 150px !important; */
+  margin-top: -113rem;
+  margin-left: -9.5rem;
 }
 
+.card-n-img0 {
+  margin-top: -83rem;
+}
 .card-n-img2 {
-  margin-top: -39rem;
+  margin-top: -53rem;
 }
+
 .card-n-img3 {
-  margin-top: -10rem;
+  margin-top: -22rem;
 }
+
 .card-n-img img {
-  width: 180px;
-  height: 110px;
+  width: 300px;
+  height: 220px;
+  box-shadow: 0px 0px 10px 2px #52a7e0;
 }
 
 @media (min-width: 1000px) {
@@ -681,12 +759,14 @@ textarea {
     height: 90vh;
     padding-top: 2rem;
   }
+
   .title h1,
   h2 {
     font-size: 150px;
 
     margin-top: -2rem;
   }
+
   .title h2 {
     font-size: 60px;
   }
@@ -696,6 +776,7 @@ textarea {
     width: 200px;
     height: 60px;
   }
+
   .backgroundImage {
     margin-top: 0;
     width: 1000px;
@@ -712,11 +793,13 @@ textarea {
     padding-right: 2rem;
     margin-top: 2rem;
   }
+
   .text-desing h1 {
     border-bottom: 3px solid #52a7e0;
     font-size: 31px;
     font-family: Arvo;
   }
+
   .text-desing p {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -736,16 +819,19 @@ textarea {
   .description-about h1 {
     text-align: center;
   }
+
   .img-container {
     position: absolute;
     margin-top: 3rem;
     z-index: -3;
   }
+
   .img2 {
     margin-left: 50rem;
     /* margin-top: 10rem; */
     /* transform: rotate(20deg); */
   }
+
   .img-home {
     width: 400px;
     opacity: 85%;
@@ -759,14 +845,17 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+
   .office-us {
     margin-top: 10rem;
     width: 600px;
     text-align: center;
   }
+
   .office-us img {
     width: 100%;
   }
+
   .office-us-prev-img img {
     margin-top: 8rem;
     width: 750px;
@@ -801,9 +890,11 @@ textarea {
     text-align: center;
     margin-left: 50rem;
   }
+
   #what-we-do q {
     text-align: left;
   }
+
   .container-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -813,6 +904,7 @@ textarea {
     left: -12rem;
     margin-top: -20rem;
   }
+
   .card {
     border: none;
     border-radius: 5px;
@@ -822,21 +914,26 @@ textarea {
     width: 200px;
     height: 300px;
   }
+
   .card:hover {
     animation: card 2s ease-in-out;
     /* animation-delay: 1000ms; */
   }
+
   @keyframes card {
     0% {
       transform: rotate(0deg);
     }
+
     50% {
       transform: rotate(20deg);
     }
+
     100% {
       transform: rotate(0deg);
     }
   }
+
   .success-stories-container {
     display: flex;
     flex-direction: column;
@@ -844,12 +941,15 @@ textarea {
     align-items: center;
     width: 100%;
   }
+
   .success-stories-container h1 {
     width: 300px;
   }
+
   .success-stories-container p {
     width: 1000px;
   }
+
   .card-container-succes-stories {
     width: 100%;
     padding: 0 10rem;
@@ -857,16 +957,19 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     gap: 0rem;
   }
+
   .card-stories {
     width: 300px;
     height: 227px;
   }
+
   .btn-view-more-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .container-cancun-section {
     display: flex;
     flex-direction: column;
@@ -874,9 +977,11 @@ textarea {
     align-items: center;
     height: 300px;
   }
+
   .container-cancun-section q {
     width: 600px;
   }
+
   .logo-container.clients {
     width: 100%;
     display: grid;
@@ -891,12 +996,14 @@ textarea {
     width: 100px;
     filter: grayscale(0.8);
   }
+
   .logo-container.clients img:hover {
     filter: grayscale(0);
     transform: scale(1.5);
     transition-property: filter;
     transition-duration: 1s;
   }
+
   .news-section-container {
     margin-top: -10rem;
     position: relative;
@@ -907,6 +1014,7 @@ textarea {
       rgba(255, 255, 255, 0) 20%
     );
   }
+
   .title-news {
     /* margin-top: 40rem; */
     margin-bottom: -10rem;
@@ -914,6 +1022,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+
   .title-news h1 {
     position: absolute;
     top: 20rem;
@@ -928,16 +1037,19 @@ textarea {
     position: relative;
     top: 50rem;
   }
+
   .card-n {
     width: 400px;
     background-color: transparent;
     box-shadow: none;
   }
+
   .card-n img {
     width: 100px;
     position: absolute;
     bottom: 4.5rem;
   }
+
   .card-n a {
     width: 350px;
     position: absolute;
@@ -945,9 +1057,11 @@ textarea {
     bottom: 1rem;
     left: 1;
   }
+
   .card-n p {
     width: 350px;
   }
+
   .card-n h4 {
     width: 350px;
     position: absolute;
@@ -963,6 +1077,7 @@ textarea {
     justify-content: center;
     margin-bottom: 1rem;
   }
+
   .text-desing.client-us div h1 {
     width: 400px;
   }
@@ -975,30 +1090,37 @@ textarea {
     width: 100%;
     padding: 2rem 15rem;
   }
+
   .text-desing.sol {
     display: grid;
     place-items: center;
   }
+
   .text-desing.sol h1 {
     margin-top: 10rem;
     margin-bottom: 3rem;
     width: 350px;
   }
+
   .card-posibility img {
     /* width: 300px;
     height: 250px; */
     box-shadow: 5px 5px 5px 5px gray;
   }
+
   .card-posibility img:hover {
     animation: card3 2s ease-in-out;
   }
+
   @keyframes card3 {
     0% {
       transform: rotate(0deg);
     }
+
     50% {
       transform: rotate(20deg);
     }
+
     100% {
       transform: rotate(0deg);
     }
@@ -1008,13 +1130,16 @@ textarea {
     0% {
       transform: rotate(0deg);
     }
+
     50% {
       transform: rotate(20deg);
     }
+
     100% {
       transform: rotate(0deg);
     }
   }
+
   #letter-slide {
     /* width: 1000px; */
     width: 100%;
@@ -1032,6 +1157,7 @@ textarea {
     gap: 0rem;
     padding: 0 20rem;
   }
+
   .card-steps {
     display: flex;
     flex-direction: column;
@@ -1044,12 +1170,15 @@ textarea {
     border-right: 1px solid black;
     position: relative;
   }
+
   .card-steps.uno {
     border-left: 1px solid black;
   }
+
   .text-desing.steps {
     width: 100%;
   }
+
   .text-steps {
     display: flex;
     align-items: center;
@@ -1064,6 +1193,7 @@ textarea {
     text-align: justify;
     padding: 0 2rem;
   }
+
   .img-steps {
     position: absolute;
     width: 100px;
@@ -1073,10 +1203,12 @@ textarea {
   #img-letras2 {
     display: none;
   }
+
   #img-letras {
     display: flex;
     margin-top: -10rem;
   }
+
   .service-about {
     display: flex;
     justify-content: center;
@@ -1088,9 +1220,11 @@ textarea {
     z-index: 1000;
     position: absolute;
   }
+
   .container-aboutus {
     margin-top: 10rem;
   }
+
   .form-contain {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 10px 0.2px rgba(128, 128, 128, 0.733);
@@ -1115,6 +1249,7 @@ textarea {
     width: 100px;
     height: 20px;
   }
+
   .btn.submit {
     text-align: center;
     font-weight: bold;
@@ -1122,6 +1257,7 @@ textarea {
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
+
   .arrow-up {
     display: none;
   }
@@ -1136,9 +1272,11 @@ textarea {
     width: 500px;
     height: 600px;
   }
+
   .center-new {
     display: block;
   }
+
   .card-nn {
     top: 44rem;
     display: flex;
@@ -1154,6 +1292,7 @@ textarea {
     position: relative;
     padding: 1rem;
   }
+
   .img-ultimateNew {
     width: 100%;
     display: flex;
@@ -1161,50 +1300,61 @@ textarea {
     position: absolute;
     bottom: 0;
   }
+
   .card-nn img {
     position: absolute;
     width: 150px;
     bottom: 5rem;
     left: 35%;
   }
+
   .card-nn h4 {
     width: 400px;
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
+
   .card-nn p {
     width: 400px;
   }
+
   .card-nn a {
     width: 400px;
     position: absolute;
     bottom: 1rem;
     text-align: center;
   }
+
   .card-nn-img {
     position: absolute;
     z-index: 200;
     margin-top: -11rem;
     margin-left: -6rem;
   }
+
   .card-nn-img img {
     width: 200px;
   }
+
   .card-n-img {
     position: absolute;
     z-index: 200;
     margin-top: -100rem;
     margin-left: -5rem;
   }
+
   .card-n-img0 {
     margin-top: -72rem;
   }
+
   .card-n-img2 {
     margin-top: -39rem;
   }
+
   .card-n-img3 {
     margin-top: -10rem;
   }
+
   .card-n-img img {
     width: 180px;
     height: 100px;
@@ -1213,37 +1363,44 @@ textarea {
   .card-nn-img {
     position: absolute;
     z-index: 200;
-    margin-top: 73rem;
-    margin-left: 13rem;
+    margin-top: 60rem;
+    margin-left: 11.5rem;
   }
+
   .card-nn-img img {
-    width: 280px;
+    width: 350px;
+    height: 250px;
   }
+
   .card-n-img {
     position: absolute;
     z-index: 200;
     margin-top: 0rem;
     margin-left: -5rem;
   }
+
   .card-n-img0 {
-    margin-top: 40rem;
-    margin-left: 70rem;
+    margin-top: 28rem;
+    margin-left: 66rem;
   }
+
   .card-n-img1 {
-    margin-top: 10rem;
-    margin-left: 45rem;
+    margin-top: -2rem;
+    margin-left: 41rem;
   }
 
   .card-n-img2 {
-    margin-top: 40rem;
-    margin-left: 45rem;
+    margin-top: 28rem;
+    margin-left: 41rem;
   }
+
   .card-n-img3 {
-    margin-top: 10rem;
-    margin-left: 70rem;
+    margin-top: -2rem;
+    margin-left: 66rem;
   }
+
   .card-n-img img {
-    width: 180px;
-    height: 120px;
+    width: 300px;
+    height: 200px;
   }
 }

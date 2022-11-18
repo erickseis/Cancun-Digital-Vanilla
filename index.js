@@ -79,8 +79,8 @@ const renderResult = async (news) => {
   await news.forEach(newn => {
     listHTML += `
       <div class="card-n">
-      <h4> ${newn.title}</h4>
-      <p>${newn.content_text.slice(0, 200)}...</p>
+      <h4> ${newn.title.slice(0, 45)}...</h4>
+      <p>${newn.content_text.slice(0, 140)}...</p>
       <br />      
       <a href='${newn.url}'>https://cancundigital.com.mx/blog</a>
       </div>
@@ -97,8 +97,8 @@ const renderUltimateResult = async (ultimateNew) => {
   await ultimateNew.forEach(newn => {
     listHTML += `
       <div class="card-nn">
-      <h4> ${newn.title}</h4>
-      <p>${newn.content_text.slice(0, 500)}...</p>
+      <h4> ${newn.title.slice(0, 50)}</h4>
+      <p>${newn.content_text.slice(0, 250)}...</p>
       <br />
       <a href="${newn.url}">https://cancundigital.com.mx/blog</a>
       </div>
@@ -113,7 +113,6 @@ const renderUltimateResult = async (ultimateNew) => {
 const API_URL2 = 'https://cancundigital.com.mx/blog/wp-json/wp/v2/media';
 let img = [];
 let ultimateNewImg = [];
-// let img = [];
 window.addEventListener('DOMContentLoaded', () => {
   getImg();
 })

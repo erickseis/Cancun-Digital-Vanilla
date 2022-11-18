@@ -107,7 +107,7 @@ const renderUltimateResult = async (ultimateNew) => {
   ultimateNews.innerHTML = listHTML;
 }
 
-/* noticias del blog */
+/* imagenes de las noticias del blog */
 
 
 const API_URL2 = 'https://cancundigital.com.mx/blog/wp-json/wp/v2/media';

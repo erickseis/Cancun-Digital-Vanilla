@@ -46,6 +46,7 @@ async function handleSubmit(event) {
 const API_URL = 'https://cancundigital.com.mx/blog/feed/json';
 let news = [];
 let ultimateNew = [];
+// let img = [];
 window.addEventListener('DOMContentLoaded', () => {
   getNews();
 })
@@ -57,20 +58,19 @@ const getNews = () => {
       alertManager('error', 'Ocurrión un problema al cargar los productos');
     })
     .then(data => {
-      console.log(data.items)
       news = data.items.reverse()
         .slice(news.length - 5);
       console.log(news)
       let newarray = news.pop()
-      console.log(newarray)
       renderResult(news);
       ultimateNew = data.items.slice(ultimateNew.length - 1)
       console.log(ultimateNew)
-
       renderUltimateResult(ultimateNew)
 
     })
+
 }
+
 
 const newsList = document.querySelector('#news-container');
 
@@ -81,11 +81,10 @@ const renderResult = async (news) => {
       <div class="card-n">
       <h4> ${newn.title}</h4>
       <p>${newn.content_text.slice(0, 200)}...</p>
-      <br />
-      <img src="https://images.vexels.com/media/users/3/147149/isolated/preview/b80672b8545a4c8d9a04e7df58d4dc1b-icono-de-periodico-de-noticias.png" />
+      <br />      
       <a href='${newn.url}'>https://cancundigital.com.mx/blog</a>
       </div>
-    `
+      `
   })
   newsList.innerHTML = listHTML;
 }
@@ -101,15 +100,76 @@ const renderUltimateResult = async (ultimateNew) => {
       <h4> ${newn.title}</h4>
       <p>${newn.content_text.slice(0, 500)}...</p>
       <br />
-      <div class="img-ultimateNew">
-      <img src="https://images.vexels.com/media/users/3/147149/isolated/preview/b80672b8545a4c8d9a04e7df58d4dc1b-icono-de-periodico-de-noticias.png" />
-      </div>
       <a href="${newn.url}">https://cancundigital.com.mx/blog</a>
       </div>
     `
   })
   ultimateNews.innerHTML = listHTML;
 }
+
+/* noticias del blog */
+
+
+const API_URL2 = 'https://cancundigital.com.mx/blog/wp-json/wp/v2/media';
+let img = [];
+let ultimateNewImg = [];
+// let img = [];
+window.addEventListener('DOMContentLoaded', () => {
+  getImg();
+})
+
+const getImg = () => {
+  fetch(API_URL2)
+    .then(response => response.json())
+    .catch(error => {
+      alertManager('error', 'Ocurrión un problema al cargar los productos');
+    })
+    .then(data => {
+      img = data.reverse()
+        .slice(img.length - 5);
+      console.log(img)
+      let newarray = img.pop()
+      renderResultImg(img);
+
+      ultimateNewImg = data.slice(ultimateNewImg.length - 1)
+      console.log(ultimateNewImg)
+      renderUltimateResultImg(ultimateNewImg)
+
+    })
+
+}
+
+
+const imgList = document.querySelector('#contain');
+
+const renderResultImg = async (img) => {
+  let lisImgtHTML = "";
+  await img.forEach((im, i) => {
+    lisImgtHTML += `
+      <div class="card-n-img card-n-img${i}">
+           <img src="${im.source_url}" alt="imagen"/>
+            </div>
+      `
+  })
+  imgList.innerHTML = lisImgtHTML;
+}
+
+
+const ultimateNewsImg = document.querySelector('#contain2');
+
+const renderUltimateResultImg = async (ultimateNewImg) => {
+  let listHTML = "";
+  await ultimateNewImg.forEach(im => {
+    listHTML += `
+      <div class="card-nn-img">
+      <img src="${im.source_url}" alt="imagen"/>
+      </div>
+    `
+  })
+  ultimateNewsImg.innerHTML = listHTML;
+}
+
+
 
 
 

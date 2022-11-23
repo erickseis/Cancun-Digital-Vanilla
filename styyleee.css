@@ -552,11 +552,11 @@ h2 {
   margin-bottom: 2rem;
   font-family: Arvo;
 }
-
+/* 
 div p {
   margin-bottom: -24rem;
   margin-left: 1rem;
-}
+} */
 
 input {
   padding: 0 15px;
@@ -691,8 +691,13 @@ textarea {
   position: relative;
   z-index: 100;
 }
+
 .card-n p {
-  margin-top: -5rem;
+  margin-top: 17rem;
+  text-align: justify;
+}
+.card-nn p {
+  margin-top: 23rem;
   text-align: justify;
 }
 
@@ -1380,27 +1385,40 @@ textarea {
   }
 
   .card-n-img0 {
-    margin-top: 28rem;
-    margin-left: 66rem;
+    margin-top: 0rem;
+    margin-left: 42rem;
   }
 
   .card-n-img1 {
-    margin-top: -2rem;
-    margin-left: 41rem;
+    margin-top: 0rem;
+    margin-left: 67rem;
   }
 
   .card-n-img2 {
     margin-top: 28rem;
-    margin-left: 41rem;
+    margin-left: 67rem;
   }
 
   .card-n-img3 {
-    margin-top: -2rem;
-    margin-left: 66rem;
+    margin-top: 28rem;
+    margin-left: 42rem;
   }
 
   .card-n-img img {
     width: 300px;
     height: 200px;
+  }
+  .card-n p,
+  .card-nn p {
+    margin-bottom: -24rem;
+    margin-left: 1rem;
+  }
+  .card-n p {
+    margin-top: -5rem;
+    text-align: justify;
+  }
+  .card-nn p {
+    margin-top: 0rem;
+    text-align: justify;
   }
 }

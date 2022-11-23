@@ -111,6 +111,7 @@ const renderUltimateResult = async (ultimateNew) => {
 
 
 const API_URL2 = 'https://cancundigital.com.mx/blog/wp-json/wp/v2/media';
+
 let img = [];
 let ultimateNewImg = [];
 window.addEventListener('DOMContentLoaded', () => {
@@ -124,6 +125,7 @@ const getImg = () => {
       alertManager('error', 'Ocurrión un problema al cargar los productos');
     })
     .then(data => {
+      console.log(data)
       img = data.reverse()
         .slice(img.length - 5);
       console.log(img)
@@ -146,7 +148,7 @@ const renderResultImg = async (img) => {
   await img.forEach((im, i) => {
     lisImgtHTML += `
       <div class="card-n-img card-n-img${i}">
-           <img src="${im.source_url}" alt="imagen"/>
+           <img src="${im.source_url ? im.source_url : './public/src/images/news.png'}" alt="imagen"/>
             </div>
       `
   })
@@ -161,7 +163,7 @@ const renderUltimateResultImg = async (ultimateNewImg) => {
   await ultimateNewImg.forEach(im => {
     listHTML += `
       <div class="card-nn-img">
-      <img src="${im.source_url}" alt="imagen"/>
+      <img src="${im.source_url ? im.source_url : './public/src/images/news.png'}" alt="imagen"/>
       </div>
     `
   })
